@@ -129,7 +129,10 @@ const Menu = () => {
   const activeCategory = menuCategories.find((c) => c.id === activeTab);
 
   return (
-    <section id="meniu" className="py-8 px-4 md:px-8 lg:px-12 relative z-10">
+    <section
+      id="meniu"
+      className="py-12 scroll-mt-16 px-4 md:px-8 lg:px-12 relative z-10"
+    >
       <div className="max-w-5xl mx-auto flex flex-col items-center">
         <div className="text-center mb-12">
           <h2 className="text-4xl md:text-5xl font-extrabold tracking-tight text-[#3E2723] mb-4">

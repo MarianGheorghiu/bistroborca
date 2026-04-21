@@ -12,7 +12,7 @@ const Contact = () => {
   return (
     <section
       id="contact"
-      className="py-6 scroll-mt-26 px-4 md:px-8 lg:px-12 relative z-10"
+      className="py-6 scroll-mt-18 px-4 md:px-8 lg:px-12 relative z-10"
     >
       <div className="max-w-6xl mx-auto">
         {/* =========================================

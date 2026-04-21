@@ -52,7 +52,7 @@ const Reviews = () => {
   return (
     <section
       id="recenzii"
-      className="py-8 scroll-mt-24 px-4 md:px-8 lg:px-12 relative z-10"
+      className="py-16 mt-4 scroll-mt-14 mb-4 px-4 md:px-8 lg:px-12 relative z-10"
     >
       <style
         dangerouslySetInnerHTML={{

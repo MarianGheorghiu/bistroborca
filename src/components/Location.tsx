@@ -75,10 +75,16 @@ const Location = () => {
     setTouchEnd(0);
   };
 
+  // Calculăm indexurile pentru preîncărcare (imaginea anterioară și următoare)
+  const prevIndex =
+    currentIndex === 0 ? galleryImages.length - 1 : currentIndex - 1;
+  const nextIndex =
+    currentIndex === galleryImages.length - 1 ? 0 : currentIndex + 1;
+
   return (
     <section
       id="locatie"
-      className={`py-6 px-4 scroll-mt-18 md:px-8 lg:px-12 relative ${isOpen ? "z-[60]" : "z-10"}`}
+      className={`py-6 px-4 mb-8 scroll-mt-26 md:px-8 lg:px-12 relative ${isOpen ? "z-[60]" : "z-10"}`}
     >
       <style
         dangerouslySetInnerHTML={{
@@ -93,6 +99,10 @@ const Location = () => {
         }
         .animate-gallery:hover {
           animation-play-state: paused;
+        }
+        /* Dezactivăm scroll-ul nativ pe mobil în interiorul modalului pentru swipe fluid */
+        .touch-action-none {
+          touch-action: none;
         }
       `,
         }}
@@ -179,6 +189,10 @@ const Location = () => {
                       alt={`Galerie Bistro Borca ${realIndex}`}
                       fill
                       sizes="(max-width: 768px) 240px, 280px"
+                      quality={
+                        90
+                      } /* Forțează o claritate superioară pe mobil */
+                      loading="lazy" /* Asigură că se încarcă eficient doar când sunt pe ecran */
                       className="object-cover"
                     />
                     <div className="absolute inset-0 bg-[#3E2723]/0 hover:bg-[#3E2723]/20 transition-colors flex items-center justify-center opacity-0 hover:opacity-100">
@@ -189,7 +203,7 @@ const Location = () => {
               })}
             </div>
           </div>
-          <p className="text-xs font-bold text-[#3E2723]/50 mt-2 uppercase tracking-widest text-center">
+          <p className="text-xs mb-4 font-bold text-[#3E2723]/50 mt-2 uppercase tracking-widest text-center">
             Apasă pe o imagine pentru a o mări
           </p>
         </div>
@@ -221,8 +235,9 @@ const Location = () => {
             <ChevronLeft size={36} />
           </button>
 
+          {/* PERFORMANȚĂ: touch-action-none dezactivează scroll-ul nativ pe mobil pentru gesturi clare */}
           <div
-            className="relative w-full h-full max-w-5xl max-h-[85vh] mx-4 flex items-center justify-center"
+            className="relative w-full h-full max-w-5xl max-h-[85vh] mx-4 flex items-center justify-center touch-action-none"
             onTouchStart={handleTouchStart}
             onTouchMove={handleTouchMove}
             onTouchEnd={handleTouchEnd}
@@ -232,14 +247,39 @@ const Location = () => {
               className="relative w-full h-full"
               onClick={(e) => e.stopPropagation()}
             >
+              {/* Preîncărcare ascunsă pentru imaginea anterioară */}
+              <div className="hidden">
+                <Image
+                  src={galleryImages[prevIndex]}
+                  alt="preload prev"
+                  width={10}
+                  height={10}
+                  priority={true}
+                  unoptimized={true}
+                />
+              </div>
+
+              {/* Imaginea curentă activă */}
               <Image
                 src={galleryImages[currentIndex]}
                 alt={`Galerie mărită ${currentIndex}`}
                 fill
                 unoptimized={true}
-                className="object-contain animate-in fade-in zoom-in-95 duration-300"
-                priority
+                className="object-contain animate-in fade-in zoom-in-95 duration-200"
+                priority={true}
               />
+
+              {/* Preîncărcare ascunsă pentru imaginea următoare */}
+              <div className="hidden">
+                <Image
+                  src={galleryImages[nextIndex]}
+                  alt="preload next"
+                  width={10}
+                  height={10}
+                  priority={true}
+                  unoptimized={true}
+                />
+              </div>
             </div>
           </div>
 
