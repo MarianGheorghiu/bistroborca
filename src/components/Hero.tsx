@@ -25,7 +25,7 @@ const Hero = () => {
 
       // Program Duminică: 08:00 - 20:00
       if (day === 0) {
-        isOpenNow = hour >= 8 && hour < 20;
+        isOpenNow = hour >= 8 && hour < 17;
         if (hour < 8)
           nextOpenText = "08:00"; // Duminică dimineața
         else nextOpenText = "07:00"; // Duminică seara (următoarea zi e luni, se deschide la 7)
