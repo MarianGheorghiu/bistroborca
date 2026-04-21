@@ -11,7 +11,8 @@ import {
   Info,
 } from "lucide-react";
 
-const galleryImages = Array.from({ length: 8 }, (_, i) => `/${i + 1}.webp`);
+// Am actualizat la 11 imagini, pornind de la 0.jpg până la 10.jpg
+const galleryImages = Array.from({ length: 11 }, (_, i) => `/${i}.jpg`);
 
 const Location = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -75,9 +76,10 @@ const Location = () => {
   };
 
   return (
+    // Am scos id-ul și am pus z-index-ul corect
     <section
       id="locatie"
-      className={`py-16 px-4 md:px-8 lg:px-12 relative ${isOpen ? "z-[60]" : "z-10"}`}
+      className={`py-16 px-4 scroll-mt-8 md:px-8 lg:px-12 relative ${isOpen ? "z-[60]" : "z-10"}`}
     >
       <style
         dangerouslySetInnerHTML={{
@@ -87,7 +89,7 @@ const Location = () => {
           100% { transform: translateX(-50%); } 
         }
         .animate-gallery {
-          animation: galleryScroll 45s linear infinite;
+          animation: galleryScroll 55s linear infinite; /* Ușor încetinită pentru că sunt mai multe imagini */
           width: max-content;
         }
         .animate-gallery:hover {
@@ -97,7 +99,6 @@ const Location = () => {
         }}
       />
 
-      {/* Am restricționat totul la max-w-5xl pentru aliniere perfectă cu restul secțiunilor */}
       <div className="max-w-5xl mx-auto flex flex-col items-center">
         {/* =========================================
             Antetul Secțiunii (Centrat)
@@ -117,7 +118,7 @@ const Location = () => {
         </div>
 
         {/* =========================================
-            Carduri Info (Centrate pe mobil, Aliniate stânga pe desktop)
+            Carduri Info
             ========================================= */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 w-full mb-16">
           <div className="bg-white/40 backdrop-blur-md rounded-2xl p-8 border border-white/60 shadow-sm flex flex-col items-center md:items-start text-center md:text-left transition-all hover:bg-white/60">
@@ -149,7 +150,7 @@ const Location = () => {
         </div>
 
         {/* =========================================
-            Caruselul Galeriei (Stil Reviews)
+            Caruselul Galeriei
             ========================================= */}
         <div className="w-full">
           <div
@@ -172,7 +173,7 @@ const Location = () => {
                   >
                     <Image
                       src={src}
-                      alt={`Galerie Bistro Borca ${realIndex + 1}`}
+                      alt={`Galerie Bistro Borca ${realIndex}`}
                       fill
                       sizes="(max-width: 768px) 240px, 280px"
                       className="object-cover"
@@ -228,11 +229,12 @@ const Location = () => {
               className="relative w-full h-full"
               onClick={(e) => e.stopPropagation()}
             >
+              {/* unoptimized={true} forțează claritatea maximă a fișierului original */}
               <Image
                 src={galleryImages[currentIndex]}
-                alt={`Galerie mărită ${currentIndex + 1}`}
+                alt={`Galerie mărită ${currentIndex}`}
                 fill
-                sizes="(max-width: 1024px) 100vw, 1024px"
+                unoptimized={true}
                 className="object-contain animate-in fade-in zoom-in-95 duration-300"
                 priority
               />

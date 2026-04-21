@@ -22,7 +22,9 @@ const Footer = () => {
           {/* SOCIAL MEDIA BUTTONS */}
           <div className="flex flex-wrap justify-center gap-3">
             <a
-              href="#"
+              href="https://www.facebook.com/profile.php?id=61573180810546&locale=ro_RO"
+              target="_blank"
+              rel="noopener noreferrer"
               className="flex items-center gap-1.5 px-3 py-1.5 bg-white/50 rounded-lg border border-white/60 text-[#3E2723] hover:bg-[#3E2723] hover:text-white transition-all duration-300 group shadow-sm"
             >
               <svg
@@ -44,7 +46,9 @@ const Footer = () => {
             </a>
 
             <a
-              href="#"
+              href="https://www.instagram.com"
+              target="_blank"
+              rel="noopener noreferrer"
               className="flex items-center gap-1.5 px-3 py-1.5 bg-white/50 rounded-lg border border-white/60 text-[#3E2723] hover:bg-[#3E2723] hover:text-white transition-all duration-300 group shadow-sm"
             >
               <svg
@@ -68,7 +72,9 @@ const Footer = () => {
             </a>
 
             <a
-              href="#"
+              href="https://wa.me/40734037273"
+              target="_blank"
+              rel="noopener noreferrer"
               className="flex items-center gap-1.5 px-3 py-1.5 bg-white/50 rounded-lg border border-white/60 text-[#3E2723] hover:bg-[#3E2723] hover:text-white transition-all duration-300 group shadow-sm"
             >
               <svg

@@ -10,7 +10,7 @@ const Navbar = () => {
     { name: "Acasă", href: "#" },
     { name: "Meniu", href: "#meniu" },
     { name: "Recenzii", href: "#recenzii" },
-    { name: "Locație", href: "#locatie" }, // Modificat aici
+    { name: "Locație", href: "#locatie" },
   ];
 
   return (
@@ -19,14 +19,14 @@ const Navbar = () => {
       <div className="max-w-7xl mx-auto bg-white/30 backdrop-blur-md border border-white/40 shadow-lg rounded-2xl md:rounded-full px-6 py-3">
         <div className="flex items-center justify-between">
           {/* Logo */}
-          <div className="flex items-center gap-2 group cursor-pointer">
+          <a href="#" className="flex items-center gap-2 group cursor-pointer">
             <div className="bg-[#3E2723] p-2 rounded-full text-[#FAF6F0] transition-transform group-hover:rotate-12">
               <Coffee size={20} />
             </div>
             <span className="font-bold text-xl tracking-tight text-[#3E2723]">
               Bistro <span className="font-light opacity-70">by Rumipet</span>
             </span>
-          </div>
+          </a>
 
           {/* Navigație Desktop */}
           <div className="hidden md:flex items-center gap-8">
@@ -45,7 +45,7 @@ const Navbar = () => {
           {/* Buton Contact (Desktop) - Acum cu iconiță de telefon */}
           <div className="hidden md:block">
             <a
-              href="tel:+40123456789"
+              href="#contact"
               className="bg-[#3E2723] text-[#FAF6F0] px-6 py-2 rounded-full text-sm font-semibold hover:bg-[#5D4037] transition-all hover:scale-105 active:scale-95 shadow-md flex items-center gap-2 cursor-pointer"
             >
               <Phone size={16} />
@@ -78,11 +78,12 @@ const Navbar = () => {
               </a>
             ))}
             <a
-              href="tel:+40123456789"
+              onClick={() => setIsOpen(false)}
+              href="#contact"
               className="bg-[#3E2723] text-[#FAF6F0] w-full py-3 rounded-xl font-semibold shadow-md flex items-center justify-center gap-2 cursor-pointer"
             >
               <Phone size={18} />
-              Sună acum
+              Contact
             </a>
           </div>
         )}

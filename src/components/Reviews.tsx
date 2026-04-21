@@ -50,7 +50,10 @@ const Reviews = () => {
   const doubledReviews = [...reviews, ...reviews];
 
   return (
-    <section id="recenzii" className="py-8 px-4 md:px-8 lg:px-12 relative z-10">
+    <section
+      id="recenzii"
+      className="py-8 scroll-mt-24 px-4 md:px-8 lg:px-12 relative z-10"
+    >
       <style
         dangerouslySetInnerHTML={{
           __html: `

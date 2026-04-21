@@ -10,7 +10,10 @@ const Contact = () => {
   ];
 
   return (
-    <section id="contact" className="py-24 px-4 md:px-8 lg:px-12 relative z-10">
+    <section
+      id="contact"
+      className="py-6 scroll-mt-26 px-4 md:px-8 lg:px-12 relative z-10"
+    >
       <div className="max-w-6xl mx-auto">
         {/* Antetul Secțiunii */}
         <div className="text-center mb-12">
