@@ -129,7 +129,7 @@ const Menu = () => {
   const activeCategory = menuCategories.find((c) => c.id === activeTab);
 
   return (
-    <section id="meniu" className="py-24 px-4 md:px-8 lg:px-12 relative z-10">
+    <section id="meniu" className="py-8 px-4 md:px-8 lg:px-12 relative z-10">
       <div className="max-w-5xl mx-auto flex flex-col items-center">
         <div className="text-center mb-12">
           <h2 className="text-4xl md:text-5xl font-extrabold tracking-tight text-[#3E2723] mb-4">
@@ -141,24 +141,26 @@ const Menu = () => {
           </p>
         </div>
 
-        <div className="flex flex-wrap justify-center gap-3 mb-10 bg-white/30 backdrop-blur-md border border-white/50 p-2 rounded-3xl shadow-sm">
+        <div className="w-full md:w-auto grid grid-cols-2 md:flex md:flex-wrap justify-center gap-2 md:gap-3 mb-10 bg-white/30 backdrop-blur-md border border-white/50 p-2.5 rounded-3xl md:rounded-full shadow-sm">
           {menuCategories.map((category) => (
             <button
               key={category.id}
               onClick={() => setActiveTab(category.id)}
-              className={`flex items-center gap-2 px-6 py-3 rounded-2xl font-semibold transition-all duration-300 cursor-pointer ${
+              className={`flex flex-col md:flex-row items-center justify-center gap-1.5 md:gap-2 px-3 py-3 md:px-6 md:py-3 rounded-2xl md:rounded-full font-semibold transition-all duration-300 cursor-pointer text-center ${
                 activeTab === category.id
-                  ? "bg-[#3E2723] text-[#FAF6F0] shadow-md scale-105"
+                  ? "bg-[#3E2723] text-[#FAF6F0] shadow-md scale-[1.02] md:scale-105"
                   : "text-[#3E2723] hover:bg-white/40"
               }`}
             >
               {category.icon}
-              <span className="hidden sm:inline">{category.label}</span>
+              <span className="text-[11px] sm:text-sm md:text-base leading-tight">
+                {category.label}
+              </span>
             </button>
           ))}
         </div>
 
-        <div className="w-full bg-white/40 backdrop-blur-xl border-2 border-white/60 shadow-2xl rounded-[2.5rem] p-6 md:p-10 animate-in fade-in slide-in-from-bottom-4 duration-500">
+        <div className="w-full bg-white/40 backdrop-blur-xl border-2 border-white/60 shadow-2xl rounded-[2.5rem] p-5 md:p-10 animate-in fade-in slide-in-from-bottom-4 duration-500">
           <div className="text-center mb-8 border-b border-[#3E2723]/10 pb-6">
             <h3 className="text-2xl font-bold text-[#3E2723] mb-2">
               {activeCategory?.label}
@@ -166,29 +168,36 @@ const Menu = () => {
             <p className="text-[#3E2723]/70">{activeCategory?.description}</p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-10 md:gap-y-8">
             {activeCategory?.items.map((item, index) => (
               <div
                 key={index}
-                className={`flex justify-between items-center group transition-all duration-300 ${
+                className={`flex flex-col md:flex-row md:justify-between items-center md:items-start gap-4 group transition-all duration-300 ${
                   index === 3
-                    ? "bg-white/40 border border-white/60 p-5 rounded-2xl shadow-sm hover:bg-white/60"
+                    ? "bg-white/40 border border-white/60 p-6 rounded-3xl shadow-sm hover:bg-white/60"
                     : "p-2"
                 }`}
               >
-                <div className="pr-4">
+                {/* Zona de Text (Centrată pe mobil, Aliniată la stânga pe desktop) */}
+                <div className="flex-1 text-center md:text-left flex flex-col items-center md:items-start">
                   <h4
-                    className={`text-lg font-extrabold transition-colors ${index === 3 ? "text-[#8D6E63]" : "text-[#3E2723] group-hover:text-[#8D6E63]"}`}
+                    className={`text-xl md:text-lg font-extrabold transition-colors ${
+                      index === 3
+                        ? "text-[#8D6E63]"
+                        : "text-[#3E2723] group-hover:text-[#8D6E63]"
+                    }`}
                   >
                     {item.name}
                   </h4>
-                  <p className="text-sm font-medium text-[#3E2723]/70 mt-1 leading-relaxed">
+                  <p className="text-sm font-medium text-[#3E2723]/70 mt-2 md:mt-1.5 leading-relaxed max-w-xs md:max-w-none">
                     {item.description}
                   </p>
                 </div>
-                <div className="whitespace-nowrap flex-shrink-0">
+
+                {/* Zona de Preț (Buton Full Width pe mobil, Inline pe desktop) */}
+                <div className="w-full md:w-auto flex-shrink-0 mt-2 md:mt-0">
                   <span
-                    className={`text-xs md:text-sm font-bold px-4 py-2 rounded-full shadow-sm inline-block ${
+                    className={`block md:inline-block w-full md:w-auto text-center text-sm font-bold px-6 py-3 md:py-2 rounded-full shadow-md md:shadow-sm transition-transform active:scale-95 ${
                       index === 3
                         ? "bg-[#8D6E63] text-white"
                         : "bg-[#3E2723] text-[#FAF6F0]"
@@ -201,7 +210,7 @@ const Menu = () => {
             ))}
           </div>
 
-          <div className="mt-12 text-center">
+          <div className="mt-14 md:mt-12 text-center">
             <span className="inline-block text-[11px] uppercase tracking-widest font-extrabold text-[#3E2723]/60 bg-white/50 px-6 py-2 rounded-full border border-white/60 shadow-sm">
               Calitate Premium & Ingrediente Naturale
             </span>

@@ -76,10 +76,9 @@ const Location = () => {
   };
 
   return (
-    // Am scos id-ul și am pus z-index-ul corect
     <section
       id="locatie"
-      className={`py-16 px-4 scroll-mt-8 md:px-8 lg:px-12 relative ${isOpen ? "z-[60]" : "z-10"}`}
+      className={`py-6 px-4 scroll-mt-18 md:px-8 lg:px-12 relative ${isOpen ? "z-[60]" : "z-10"}`}
     >
       <style
         dangerouslySetInnerHTML={{
@@ -89,7 +88,7 @@ const Location = () => {
           100% { transform: translateX(-50%); } 
         }
         .animate-gallery {
-          animation: galleryScroll 55s linear infinite; /* Ușor încetinită pentru că sunt mai multe imagini */
+          animation: galleryScroll 55s linear infinite;
           width: max-content;
         }
         .animate-gallery:hover {
@@ -101,7 +100,7 @@ const Location = () => {
 
       <div className="max-w-5xl mx-auto flex flex-col items-center">
         {/* =========================================
-            Antetul Secțiunii (Centrat)
+            Antetul Secțiunii
             ========================================= */}
         <div className="text-center mb-12">
           <h2 className="text-4xl md:text-5xl font-extrabold tracking-tight text-[#3E2723] mb-4">
@@ -162,7 +161,11 @@ const Location = () => {
                 "linear-gradient(to right, transparent, black 5%, black 95%, transparent)",
             }}
           >
-            <div className="flex gap-4 md:gap-6 animate-gallery px-4 py-4 cursor-pointer">
+            {/* MANEVRA DE PERFORMANȚĂ: Punem pe pauză fundalul când se deschide modalul */}
+            <div
+              className="flex gap-4 md:gap-6 animate-gallery px-4 py-4 cursor-pointer"
+              style={{ animationPlayState: isOpen ? "paused" : "running" }}
+            >
               {carouselImages.map((src, index) => {
                 const realIndex = index % galleryImages.length;
                 return (
@@ -229,7 +232,6 @@ const Location = () => {
               className="relative w-full h-full"
               onClick={(e) => e.stopPropagation()}
             >
-              {/* unoptimized={true} forțează claritatea maximă a fișierului original */}
               <Image
                 src={galleryImages[currentIndex]}
                 alt={`Galerie mărită ${currentIndex}`}
