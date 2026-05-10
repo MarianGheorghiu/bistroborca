@@ -4,8 +4,8 @@ import { Phone, Mail, MapPin, Clock } from "lucide-react";
 
 const Contact = () => {
   const schedule = [
-    { day: "Luni – Vineri", hours: "07:00 - 20:00" }, // Am folosit en-dash (–) pentru un aspect mai rafinat
-    { day: "Sâmbătă", hours: "07:00 - 17:00" },
+    { day: "Luni – Vineri", hours: "07:00 - 16:00" }, // Am folosit en-dash (–) pentru un aspect mai rafinat
+    { day: "Sâmbătă", hours: "08:00 - 17:00" },
     { day: "Duminică", hours: "08:00 - 17:00" },
   ];
 
@@ -20,11 +20,11 @@ const Contact = () => {
             ========================================= */}
         <div className="text-center mb-10 md:mb-12">
           <h2 className="text-4xl md:text-5xl font-extrabold tracking-tight text-[#3E2723] mb-4">
-            Te așteptăm la Bistro
+            Te așteptăm cu drag
           </h2>
           <p className="text-lg text-[#3E2723]/70 font-medium max-w-xl mx-auto px-4 md:px-0">
-            Indiferent dacă vrei o cafea rapidă sau o masă relaxantă, suntem
-            aici pentru tine.
+            Fie că ești în trecere pentru o cafea rapidă sau îți dorești o masă
+            relaxantă, suntem pregătiți să te surprindem.
           </p>
         </div>
 

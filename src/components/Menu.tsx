@@ -136,11 +136,12 @@ const Menu = () => {
       <div className="max-w-5xl mx-auto flex flex-col items-center">
         <div className="text-center mb-12">
           <h2 className="text-4xl md:text-5xl font-extrabold tracking-tight text-[#3E2723] mb-4">
-            Selecția Noastră
+            O selecție rafinată
           </h2>
           <p className="text-lg text-[#3E2723]/70 font-medium max-w-2xl mx-auto text-center">
-            Descoperă o parte din bunătățile noastre. Vizitează Bistro by
-            Rumipet pentru experiența completă!
+            Am ales pentru tine cele mai apreciate arome. Răsfoiește meniul și
+            vino în locație pentru a te bucura de gustul autentic Bistro by
+            Rumipet.
           </p>
         </div>
 

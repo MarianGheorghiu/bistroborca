@@ -5,43 +5,43 @@ import { Star, Quote } from "lucide-react";
 const reviews = [
   {
     name: "Ionuț R.",
-    text: "Am oprit la o cafea pe drumul spre Vatra Dornei și am rămas surprins. Cafea super bună, exact ca la cafenelele de fițe din oraș.",
+    text: "Un popas excelent pe drumul spre Vatra Dornei. Am fost plăcut surprins să descopăr o cafea premium, la același standard cu cele mai bune cafenele de specialitate din oraș.",
   },
   {
     name: "Alex M.",
-    text: "Cea mai faină locație din Borca! Burgerii sunt demențiali, chifla moale și carnea suculentă. Bravo băieți!",
+    text: "Fără îndoială, cea mai rafinată locație din Borca! Burgerii sunt excepționali – carne suculentă și ingrediente de top. O experiență culinară peste așteptări.",
   },
   {
     name: "Maria T.",
-    text: "O oază de liniște. Ne-am oprit întâmplător, dar am revenit a doua zi pentru prăjiturile alea de casă. Recomand din suflet.",
+    text: "O adevărată oază de relaxare. Ne-am oprit întâmplător, dar am revenit a doua zi pentru deserturile savuroase. Recomand acest bistro tuturor celor care tranzitează județul Neamț.",
   },
   {
     name: "Bogdan C.",
-    text: "Un espresso scurt și corect. Personalul e de treabă, te servesc repede. Atmosferă mișto și curățenie exemplară.",
+    text: "Un espresso impecabil și o servire ireproșabilă. Am apreciat în mod special curățenia exemplară și atmosfera modernă. Locul ideal pentru o pauză rafinată.",
   },
   {
     name: "Ștefan D.",
-    text: "În sfârșit un loc unde poți mânca ceva bun în zonă. Am luat pizza și a fost ce trebuie, blat subțire și ingrediente ok.",
+    text: "În sfârșit, un restaurant în zona Borca unde poți savura o masă de înaltă calitate. Pizza are un blat perfect și ingrediente proaspete, alese cu grijă.",
   },
   {
     name: "Alina P.",
-    text: "Cafeaua excelentă, prețuri super decente pentru calitatea pe care o oferă. Designul e superb, foarte cozy.",
+    text: "Raportul calitate-preț este excelent. Cafeaua este desăvârșită, iar designul interior îți oferă acea atmosferă intimă și premium, rară în această zonă.",
   },
   {
     name: "Cristi S.",
-    text: "Mici blană, cartofi buni și o limonadă rece. Fix ce aveam nevoie după o zi obositoare pe munte.",
+    text: "Preparatele la grill sunt extrem de savuroase, iar limonada a fost exact ce aveam nevoie după un traseu pe munte. O surpriză gastronomică extraordinară.",
   },
   {
     name: "Gabriela I.",
-    text: "Foarte curat, baia lună, ceea ce contează enorm pe drum. Am băut un cappuccino de nota 10.",
+    text: "Curățenia este la cele mai înalte standarde, un detaliu crucial pentru călători. Mai mult, cappuccino-ul pe care l-am savurat aici a fost absolut delicios.",
   },
   {
     name: "Valentin O.",
-    text: "Atmosferă faină, muzică în surdină, nu urlă boxele ca în alte părți. O experiență super relaxantă.",
+    text: "O atmosferă de o eleganță discretă, cu muzică ambientală în surdină. Este mediul perfect pentru a savura o masă liniștită sau pentru o întâlnire de afaceri.",
   },
   {
     name: "Mihaela E.",
-    text: "Singurul loc din zonă unde chiar merită să te oprești. Dacă treceți prin Neamț, nu-i ratați.",
+    text: "O destinație culinară care merită din plin! Dacă tranzitați Neamțul pe traseul spre Vatra Dornei, Bistro by Rumipet este oprirea obligatorie pentru calitate și bun gust.",
   },
 ];
 
@@ -76,11 +76,12 @@ const Reviews = () => {
         {/* Header-ul copiază exact stilul de la Menu */}
         <div className="text-center mb-12">
           <h2 className="text-4xl md:text-5xl font-extrabold tracking-tight text-[#3E2723] mb-4">
-            Ce spun oaspeții noștri
+            Cuvintele oaspeților noștri
           </h2>
           <p className="text-lg text-[#3E2723]/70 font-medium max-w-2xl mx-auto text-center">
-            Ne bucurăm să oferim experiențe memorabile. Iată ce spun cei care
-            ne-au trecut pragul!
+            Ne mândrim cu o comunitate care apreciază detaliile și gustul bun.
+            Iată câteva gânduri de la cei care s-au bucurat de experiența Bistro
+            by Rumipet.
           </p>
         </div>
 

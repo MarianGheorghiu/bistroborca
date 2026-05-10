@@ -114,15 +114,16 @@ const Location = () => {
             ========================================= */}
         <div className="text-center mb-12">
           <h2 className="text-4xl md:text-5xl font-extrabold tracking-tight text-[#3E2723] mb-4">
-            Povestea Noastră în <br className="hidden md:block" />
+            Un refugiu al gustului <br className="hidden md:block" />
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#3E2723] to-[#8D6E63]">
-              Inima Naturii
+              în inima munților
             </span>
           </h2>
           <p className="text-lg text-[#3E2723]/70 font-medium max-w-2xl mx-auto text-center">
-            Amplasat strategic în peisajul pitoresc din Borca, județul Neamț,
-            Bistro by Rumipet este un refugiu premium unde cafeaua de
-            specialitate întâlnește preparatele artizanale.
+            Gândit ca o oază de relaxare în Borca, județul Neamț, Bistro by
+            Rumipet este locul unde calitatea face diferența. Aici, cafeaua
+            excelentă se îmbină cu preparate savuroase, pregătite cu pasiune din
+            ingrediente alese.
           </p>
         </div>
 
@@ -136,24 +137,26 @@ const Location = () => {
               Locația Noastră
             </h3>
             <p className="text-[#3E2723]/80 font-medium leading-relaxed">
-              Te așteptăm cu drag direct la strada principală în{" "}
-              <strong className="text-[#3E2723]">Borca, județul Neamț</strong>.
-              Un spațiu gândit pentru relaxare și momente de respiro.
+              Situați convenabil la drumul principal din{" "}
+              <strong className="text-[#3E2723]">Borca, județul Neamț</strong>,
+              îți oferim o atmosferă liniștită și rafinată de îndată ce ne treci
+              pragul.
             </p>
           </div>
 
           <div className="bg-white/40 backdrop-blur-md rounded-2xl p-8 border border-white/60 shadow-sm flex flex-col items-center md:items-start text-center md:text-left transition-all hover:bg-white/60">
             <CalendarHeart className="text-[#8D6E63] mb-4" size={32} />
             <h3 className="text-xl font-bold text-[#3E2723] mb-2">
-              Evenimente Private
+              Momente Speciale
             </h3>
             <p className="text-[#3E2723]/80 font-medium leading-relaxed">
-              Organizăm{" "}
+              Fie că plănuiești o{" "}
               <strong className="text-[#3E2723]">
-                zile de naștere și evenimente restrânse
+                aniversare sau o întâlnire privată
               </strong>
-              . Oferim un meniu personalizat și o atmosferă intimă, premium,
-              pentru momentele tale speciale.
+              , îți punem la dispoziție spațiul nostru premium. Meniul
+              personalizat și atmosfera relaxantă asigură succesul oricărui
+              eveniment.
             </p>
           </div>
         </div>

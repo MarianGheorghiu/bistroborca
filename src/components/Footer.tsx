@@ -14,8 +14,9 @@ const Footer = () => {
               Bistro by <span className="text-[#8D6E63]">Rumipet</span>
             </h2>
             <p className="text-[10px] md:text-xs text-[#3E2723]/70 font-medium leading-snug">
-              Experiență premium în Borca, Neamț. Cafea de specialitate,
-              preparate artizanale și evenimente private.
+              Noul standard pentru gust și rafinament în Borca. Cafea premium,
+              preparate delicioase și o atmosferă exclusivistă pentru momentele
+              tale speciale.
             </p>
           </div>
 

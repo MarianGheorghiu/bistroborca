@@ -57,16 +57,16 @@ const Hero = () => {
             ========================================= */}
         <div className="flex flex-col items-center lg:items-start text-center lg:text-left space-y-8 relative z-10">
           <h1 className="text-5xl md:text-6xl lg:text-7xl font-extrabold tracking-tight text-[#3E2723] leading-[1.1]">
-            Savoare și relaxare <br />
+            Noul standard <br />
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#3E2723] to-[#8D6E63]">
-              în inima munților
+              pentru gust și rafinament
             </span>
           </h1>
 
           <p className="text-lg md:text-xl text-[#3E2723]/80 font-medium max-w-lg leading-relaxed mx-auto lg:mx-0">
-            Bistro by Rumipet este locul unde cafeaua de specialitate întâlnește
-            o atmosferă premium. Te așteptăm în Borca pentru o experiență locală
-            autentică.
+            Cadrul ideal pentru o întâlnire de afaceri sau un moment de relaxare
+            în Borca. Te așteptăm cu o selecție premium de cafea și un meniu
+            artizanal, gândite special pentru tine.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 w-full sm:w-auto justify-center lg:justify-start">

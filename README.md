@@ -1,36 +1,36 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Bistro by Rumipet - Premium Landing Page ☕🍔
 
-## Getting Started
+[![Live Demo](https://img.shields.io/badge/Live%20Demo-Visit%20Site-success?style=for-the-badge)](https://bistroborca.vercel.app/)
 
-First, run the development server:
+## 📌 Project Overview
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+**Bistro by Rumipet** is a conceptual, high-converting landing page built for a premium local bistro in Borca, Neamț County, Romania.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+The goal of this project was to transform a highly-rated local business with zero digital presence into a premium online brand. This project showcases a hybrid approach: blending modern web development with conversion-optimized copywriting and local SEO strategies.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 🎯 The Strategy (Copywriting & Positioning)
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Instead of a standard, boring digital menu, the website is structured as a premium destination. The copy was specifically tailored to target three distinct buyer personas:
 
-## Learn More
+1. **Transiting Tourists:** Looking for a high-quality resting stop ("Noul standard pentru gust și rafinament").
+2. **Local Professionals:** Seeking a premium environment for business or casual meetings.
+3. **Event Organizers:** Looking for an intimate, worry-free venue for private events.
 
-To learn more about Next.js, take a look at the following resources:
+**Key Copywriting Features:**
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- **Clear > Clever:** Translated local jargon into premium, universally understood benefits (e.g., removing overly used terms like "artizanal" in favor of clear value propositions).
+- **Voice of Customer (VoC):** Curated and refined real customer reviews to build social proof while maintaining a high-end brand voice.
+- **Local SEO:** Strategically embedded location-based keywords (Borca, Neamț, Vatra Dornei route) within natural, elegant prose to boost local search rankings.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 💻 Tech Stack
 
-## Deploy on Vercel
+- **Framework:** Next.js
+- **Styling:** Tailwind CSS
+- **Deployment:** Vercel
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## ✨ Key Features
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- **Fully Responsive Design:** Flawless experience on mobile, tablet, and desktop.
+- **Modern UI/UX:** Clean typography, gradient text clipping, and strategic whitespace to emphasize the "premium" feel.
+- **Conversion-Driven Layout:** Strategic placement of Call-to-Action (CTA) buttons and social proof (reviews) to guide the user journey.
+- **Performance Optimized:** Lightweight build ensuring fast load times, crucial for users accessing the site on mobile networks while traveling.
