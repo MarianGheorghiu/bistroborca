@@ -114,16 +114,16 @@ const Location = () => {
             ========================================= */}
         <div className="text-center mb-12">
           <h2 className="text-4xl md:text-5xl font-extrabold tracking-tight text-[#3E2723] mb-4">
-            Un refugiu al gustului <br className="hidden md:block" />
+            Uită de drum. Uită de ceas. <br className="hidden md:block" />
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#3E2723] to-[#8D6E63]">
-              în inima munților
+              Aici pauza e pauză, <br /> iar mâncarea e mâncare.
             </span>
           </h2>
           <p className="text-lg text-[#3E2723]/70 font-medium max-w-2xl mx-auto text-center">
-            Gândit ca o oază de relaxare în Borca, județul Neamț, Bistro by
-            Rumipet este locul unde calitatea face diferența. Aici, cafeaua
-            excelentă se îmbină cu preparate savuroase, pregătite cu pasiune din
-            ingrediente alese.
+            Bistro by Rumipet este răspunsul nostru la oboseală. Tu aduci pofta,
+            noi aducem atmosfera relaxată. Fie că ești din zonă sau doar în
+            trecere, aici e colțul tău unde mâncarea gătită corect se savurează
+            în tihnă.
           </p>
         </div>
 
@@ -134,29 +134,27 @@ const Location = () => {
           <div className="bg-white/40 backdrop-blur-md rounded-2xl p-8 border border-white/60 shadow-sm flex flex-col items-center md:items-start text-center md:text-left transition-all hover:bg-white/60">
             <MapPin className="text-[#8D6E63] mb-4" size={32} />
             <h3 className="text-xl font-bold text-[#3E2723] mb-2">
-              Locația Noastră
+              Ușor de găsit. Greu de egalat.
             </h3>
             <p className="text-[#3E2723]/80 font-medium leading-relaxed">
-              Situați convenabil la drumul principal din{" "}
+              Situat excelent pe artera principală din{" "}
               <strong className="text-[#3E2723]">Borca, județul Neamț</strong>,
-              îți oferim o atmosferă liniștită și rafinată de îndată ce ne treci
-              pragul.
+              bistroul nostru te rupe instant de oboseala drumului. Treci pragul
+              și lasă-ne să te surprindem cu o servire la cele mai înalte
+              standarde.
             </p>
           </div>
 
           <div className="bg-white/40 backdrop-blur-md rounded-2xl p-8 border border-white/60 shadow-sm flex flex-col items-center md:items-start text-center md:text-left transition-all hover:bg-white/60">
             <CalendarHeart className="text-[#8D6E63] mb-4" size={32} />
             <h3 className="text-xl font-bold text-[#3E2723] mb-2">
-              Momente Speciale
+              Petrecerea e a ta. De stres ne ocupăm noi.
             </h3>
             <p className="text-[#3E2723]/80 font-medium leading-relaxed">
-              Fie că plănuiești o{" "}
-              <strong className="text-[#3E2723]">
-                aniversare sau o întâlnire privată
-              </strong>
-              , îți punem la dispoziție spațiul nostru premium. Meniul
-              personalizat și atmosfera relaxantă asigură succesul oricărui
-              eveniment.
+              Spațiu doar pentru tine și ai tăi, un meniu făcut fix pe pofta
+              voastră și zero bătăi de cap la final. Așa arată o ieșire reușită
+              la Bistro by Rumipet. Dă-ne un telefon și hai să punem la cale o
+              seară memorabilă.
             </p>
           </div>
         </div>

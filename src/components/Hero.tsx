@@ -57,16 +57,16 @@ const Hero = () => {
             ========================================= */}
         <div className="flex flex-col items-center lg:items-start text-center lg:text-left space-y-8 relative z-10">
           <h1 className="text-5xl md:text-6xl lg:text-7xl font-extrabold tracking-tight text-[#3E2723] leading-[1.1]">
-            Noul standard <br />
+            Cafeaua ta perfectă. <br />
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#3E2723] to-[#8D6E63]">
-              pentru gust și rafinament
+              Momentul tău de liniște.
             </span>
           </h1>
 
           <p className="text-lg md:text-xl text-[#3E2723]/80 font-medium max-w-lg leading-relaxed mx-auto lg:mx-0">
-            Cadrul ideal pentru o întâlnire de afaceri sau un moment de relaxare
-            în Borca. Te așteptăm cu o selecție premium de cafea și un meniu
-            artizanal, gândite special pentru tine.
+            Fă o pauză cu adevărat relaxantă în Borca. Lasă drumul deoparte și
+            bucură-te de un burger suculent, o pizza rumenită perfect și cel mai
+            cremos espresso de pe traseu.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 w-full sm:w-auto justify-center lg:justify-start">
@@ -74,7 +74,7 @@ const Hero = () => {
               href="#meniu"
               className="inline-flex justify-center items-center gap-2 bg-[#3E2723] text-[#FAF6F0] px-8 py-4 rounded-full font-semibold hover:bg-[#5D4037] transition-all hover:scale-105 active:scale-95 shadow-lg group"
             >
-              Vezi Meniul
+              Deschide Meniul
               <ArrowRight
                 size={18}
                 className="group-hover:translate-x-1 transition-transform"
@@ -97,7 +97,7 @@ const Hero = () => {
                 ))}
               </div>
               <span className="text-[#3E2723] opacity-90 tracking-wide">
-                APRECIAT DE CLIENȚII NOȘTRI LOCALI
+                IUBIT DE LOCALNICI. RECOMANDAT DE CĂLĂTORI.
               </span>
             </div>
           </div>

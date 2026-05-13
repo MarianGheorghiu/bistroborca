@@ -5,43 +5,43 @@ import { Star, Quote } from "lucide-react";
 const reviews = [
   {
     name: "Ionuț R.",
-    text: "Un popas excelent pe drumul spre Vatra Dornei. Am fost plăcut surprins să descopăr o cafea premium, la același standard cu cele mai bune cafenele de specialitate din oraș.",
+    text: "Sincer, am oprit doar să folosim baia și să luăm o apă. Am văzut ce mâncare ieșea din bucătărie și am rămas la un burger. Absolut demențial! Baia e lună, cafeaua tare. Opriți cu încredere.",
   },
   {
     name: "Alex M.",
-    text: "Fără îndoială, cea mai rafinată locație din Borca! Burgerii sunt excepționali – carne suculentă și ingrediente de top. O experiență culinară peste așteptări.",
+    text: "În sfârșit un loc pe ruta spre Vatra Dornei unde nu mănânci sandvișuri obosite de la benzinărie. Pizza pe vatră e bombă, iar espresso-ul chiar te trezește la viață după 3 ore de condus.",
   },
   {
     name: "Maria T.",
-    text: "O adevărată oază de relaxare. Ne-am oprit întâmplător, dar am revenit a doua zi pentru deserturile savuroase. Recomand acest bistro tuturor celor care tranzitează județul Neamț.",
+    text: "Nu mă așteptam să găsesc specialty coffee în Borca. Eram super obosită la volan, dar flat white-ul de aici a salvat situația. Plus că au fost super rapizi cu comanda.",
   },
   {
     name: "Bogdan C.",
-    text: "Un espresso impecabil și o servire ireproșabilă. Am apreciat în mod special curățenia exemplară și atmosfera modernă. Locul ideal pentru o pauză rafinată.",
+    text: "Am oprit la dus. Ne-a plăcut atât de mult încât am oprit și la întoarcere. Cartofii sunt geniali, carnea din burger suculentă, nu talpă. Prețuri super cinstite pentru ce primești.",
   },
   {
     name: "Ștefan D.",
-    text: "În sfârșit, un restaurant în zona Borca unde poți savura o masă de înaltă calitate. Pizza are un blat perfect și ingrediente proaspete, alese cu grijă.",
+    text: "Eram pe motor, înghețați și flămânzi. Locul ăsta a fost fix ce ne trebuia. Căldură, un grătar cinstit și o limonadă cum face bunica. Jos pălăria pentru servire!",
   },
   {
     name: "Alina P.",
-    text: "Raportul calitate-preț este excelent. Cafeaua este desăvârșită, iar designul interior îți oferă acea atmosferă intimă și premium, rară în această zonă.",
+    text: "Cel mai bun popas din județul Neamț. Fără fițe, curățenie exemplară (chestie rară pe traseu) și o cafea excelentă. Recomand oricui e în tranzit.",
   },
   {
     name: "Cristi S.",
-    text: "Preparatele la grill sunt extrem de savuroase, iar limonada a fost exact ce aveam nevoie după un traseu pe munte. O surpriză gastronomică extraordinară.",
+    text: "Dacă ești din zonă sau doar în trecere, bagă un burger de la ei. Sincer, e la nivelul celor mai bune burgerii din Cluj sau București. Nu glumesc deloc.",
   },
   {
     name: "Gabriela I.",
-    text: "Curățenia este la cele mai înalte standarde, un detaliu crucial pentru călători. Mai mult, cappuccino-ul pe care l-am savurat aici a fost absolut delicios.",
+    text: "Atmosferă faină, loc relaxat, nu urlă boxele cu muzică proastă. Am luat un desert și o cafea – nota 10. Chiar îți tragi sufletul și te relaxezi înainte să te întorci la volan.",
   },
   {
     name: "Valentin O.",
-    text: "O atmosferă de o eleganță discretă, cu muzică ambientală în surdină. Este mediul perfect pentru a savura o masă liniștită sau pentru o întâlnire de afaceri.",
+    text: "Mâncare excelentă și porții generoase. Raportul calitate-preț este imbatabil. A devenit oficial oprirea mea obligatorie ori de câte ori trec Carpații spre Moldova.",
   },
   {
     name: "Mihaela E.",
-    text: "O destinație culinară care merită din plin! Dacă tranzitați Neamțul pe traseul spre Vatra Dornei, Bistro by Rumipet este oprirea obligatorie pentru calitate și bun gust.",
+    text: "O surpriză excelentă! Curat, servire rapidă, gustos. Nu mai opriți pe marginea drumului la tot felul de chioșcuri, aici aveți mâncare caldă făcută pe bune.",
   },
 ];
 
@@ -79,9 +79,7 @@ const Reviews = () => {
             Cuvintele oaspeților noștri
           </h2>
           <p className="text-lg text-[#3E2723]/70 font-medium max-w-2xl mx-auto text-center">
-            Ne mândrim cu o comunitate care apreciază detaliile și gustul bun.
-            Iată câteva gânduri de la cei care s-au bucurat de experiența Bistro
-            by Rumipet.
+            Nu ne crede pe noi. Vezi ce spun cei care au oprit deja aici.
           </p>
         </div>
 
